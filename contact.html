@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Erin Rykken - Portfolio Redo</title>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.production.css">
+</head>
+
+<body class="body">
+    
+    <header class="page-header">
+        <img src="img/logo.jpeg" width="30px" height="30px" float="left" alt=tree>
+        <strong>Erin Rykken</strong>
+        <div class="grid-nav">
+            <div class="grid__item-nav">
+                <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+        </div>  
+        <div class="grid__item-nav">
+                  <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+          </div>
+          <div class="grid__item-nav">
+            <a href="projects.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Projects</a>
+            </div>
+          <div class="grid__item-nav">
+                  <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          </div>
+        </div>   
+    </header>
+
+    <h1 id="contact">Contact</h1>
+    <nav>
+        <p>Erin Rykken</p>
+        <p>873 Woodland Hills Road</p>
+        <p>Helena, MT</p>
+        <p>59602</p>
+        <p>USA</p>
+        <p>
+            <a href="tel:+01 406 640 0920">Tel: +01 406 640 0920</a>
+        </p> 
+        <p>
+            <a  href="mailto:erinrykken1@gmail.com">email: erinrykken1@gmail.com</a>
+        </p>
+        <p>
+            <a  href="mailto:erinrykken1@gmail.com">Submit a Comment</a>
+        </p>
+    </nav>
+    <br>
+    <br>
+    <form action="" method="post">
+        <label class="standard-label" for="contact-email">Email: </label>
+        <input type="email" id="contact-email" required>
+      
+        <label class="standard-label" for="tel">Telephone: </label>
+        <input type="tel" id="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+      
+        <label class="standard-label" for="message">Message: </label>
+        <textarea maxlength="240" id="message" required></textarea>
+        <input type="submit" value="Send message">
+    </form>
+    
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <a href="./lnkplchldr.html"> <img src="img/github.svg" alt="Github"></a>
+            <a href="./lnkplchldr.html"> <img src="img/twitter.svg" alt="Twitter"></a>
+            <a href="./lnkplchldr.html"> <img src="img/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </footer>
+    <a href="#">Back to top</a>
+    <script src="js/tota11y.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+$font: sans-serif;
+$wrapperdisplay: grid;
+$gridtemplatecolumns: 1fr 1fr 1fr 1fr;
+$wrappergridgap: 20px;
+$wrapperpadding: 20p;
+$primarypadding: 10px;
+$primaryborderradius: 5px;
+$primaryboxshadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+$primarybackground: #112055;
+$primarycolor: #fff;
+$primarycolorlighter: primarycolor (lighten, 20%);
+$primarycolordarker: primarycolor (darken, 20%);
+$secondarybackground: #4f9d92;
+$secondaryfont: #000
+
+
+
+  .box__wrapper {
+  display: $wrapperdisplay;
+  grid-template-columns: $gridtemplatecolumns;
+  grid-gap: $wrappergridgap;
+  padding: $wrapperpadding;
+  font-family: $font;
+  &--box-primary {
+  padding: $primarypadding;
+  border-radius: $primaryborderradius;
+  box-shadow: $primaryboxshadow;
+  background-color: $primarybackground;
+  color: primarycolor;
+  }
+  &--box-primary-lighter {
+  @extend .box-primary;
+  color: $primarycolorlighter
+    }
+  &--box-primary-darker {
+  @extend .box-primary;
+   color: $primarycolordarker
+  }
+  &--box-secondary {
+    @extend .box-primary;
+    background-color: $secondarybackground;
+  color: $secondarycolor;
+    
+  }
+}
+
